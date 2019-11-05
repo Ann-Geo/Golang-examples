@@ -3,13 +3,7 @@ package main
 import (
 	"fmt"
 	"strconv"
-
-
 )
-
-
-
-
 func printBinary(s int, prefix string) {
 	//fmt.Println("s=", s, ", prefix=", prefix)
 
@@ -19,19 +13,10 @@ func printBinary(s int, prefix string) {
 
 		for i := 0; i<10; i++ {
 		
-			printBinary(s-1, prefix+strconv.Itoa(i))
-		
+			printBinary(s-1, prefix+strconv.Itoa(i))		
 		}
-
-	
 	}
-	
-
 }
-
-
-
-
 func main() {
 
 	fmt.Println("Input the number")
@@ -40,8 +25,4 @@ func main() {
 	
 	
 	printBinary(inpint, "")
-
 }
-
-
-
