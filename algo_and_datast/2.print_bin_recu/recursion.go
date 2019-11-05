@@ -6,11 +6,8 @@ import (
 
 )
 
-
-
-
 func printBinary(s int, prefix string) {
-	fmt.Println("s=", s, ", prefix=", prefix)
+	//fmt.Println("s=", s, ", prefix=", prefix)
 
 	if (s == 0) {
 		fmt.Println(prefix)
@@ -19,12 +16,7 @@ func printBinary(s int, prefix string) {
 		printBinary(s-1, prefix+"1")
 	
 	}
-	
-
 }
-
-
-
 
 func main() {
 
@@ -36,6 +28,3 @@ func main() {
 	printBinary(inpint, "")
 
 }
-
-
-
