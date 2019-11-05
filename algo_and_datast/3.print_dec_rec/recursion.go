@@ -2,13 +2,7 @@ package main
 
 import (
 	"fmt"
-
-
 )
-
-
-
-
 func printBinary(s int, prefix string) {
 	//fmt.Println("s=", s, ", prefix=", prefix)
 
@@ -27,27 +21,12 @@ func printBinary(s int, prefix string) {
 		printBinary(s-1, prefix+"7")
 		printBinary(s-1, prefix+"8")
 		printBinary(s-1, prefix+"9")
-
-
-	
 	}
-	
-
 }
-
-
-
-
 func main() {
 
 	fmt.Println("Input the number")
 	var inpint int
 	fmt.Scanln(&inpint)
-	
-	
 	printBinary(inpint, "")
-
 }
-
-
-
